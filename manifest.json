@@ -1,0 +1,14 @@
+{
+  "name": "Github Page Link",
+  "description": "Make your life easier with direct link to the repository github page (only for repository that contain *.github.io on it's name)",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["main.js"]
+    }
+  ]
+}
