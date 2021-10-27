@@ -23,7 +23,7 @@ const newLink = (link, isExternal) => {
 }
 
 
-if(siteName === 'github.com' && gitRepoName && (gitHubPageReference || repoLinkReference)) {
+if(siteName === 'github.com' && gitRepoName && (gitHubPageReference || repoLinkReference.nextElementSibling)) {
   
   const isContainName = /.*.(github.io)/g.test(gitRepoName) // Check if the reponame include github.io
   const isTheMainRepo = userName.toLocaleLowerCase() === gitRepoName.substring(0, gitRepoName.length - 10) // check if the reponame is equal to username
