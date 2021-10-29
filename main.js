@@ -6,7 +6,7 @@ const gitHubPageReference = document.querySelectorAll('.octicon.octicon-rocket')
 const repoLinkReference = document.querySelectorAll('.octicon.octicon-link')[0]
 
 const newLink = (link, isExternal) => {
-  let linkTo = document.createElement("div")
+  const linkTo = document.createElement("div")
   linkTo.style =
     "background-color: #13171d; padding: 1rem 1.5rem; padding-left: 2rem; text-decoration: none; border-radius:0.3rem; display: flex; align-items:center; gap: 0.6rem"
   linkTo.innerHTML = `<strong>Github-page Injector</strong>
@@ -25,9 +25,9 @@ const newLink = (link, isExternal) => {
 
 if(siteName === 'github.com' && gitRepoName && (gitHubPageReference || repoLinkReference.nextElementSibling)) {
   
-  const isContainName = /.*.(github.io)/g.test(gitRepoName) // Check if the reponame include github.io
-  const isTheMainRepo = userName.toLocaleLowerCase() === gitRepoName.substring(0, gitRepoName.length - 10) // check if the reponame is equal to username
-  const isHasExternalLink = (repoLinkReference && repoLinkReference.nextElementSibling) // check if there is External Link
+  const isContainName = /.*.(github.io)/g.test(gitRepoName)
+  const isTheMainRepo = userName.toLocaleLowerCase() === gitRepoName.substring(0, gitRepoName.length - 10)
+  const isHasExternalLink = (repoLinkReference && repoLinkReference.nextElementSibling)
   
   if(isContainName && isTheMainRepo)
   {
