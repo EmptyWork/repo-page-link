@@ -22,7 +22,6 @@ const newLink = (link, isExternal) => {
   appendTo.insertBefore(linkTo, reference)
 }
 
-
 if(siteName === 'github.com' && gitRepoName && (gitHubPageReference || repoLinkReference.nextElementSibling)) {
   
   const isContainName = /.*.(github.io)/g.test(gitRepoName)
@@ -44,4 +43,3 @@ if(siteName === 'github.com' && gitRepoName && (gitHubPageReference || repoLinkR
     }
   }
 }
-  

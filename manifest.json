@@ -1,8 +1,12 @@
 {
-  "name": "Github Page Link",
+  "name": "Ghpage",
   "description": "Make your life easier with direct link to the repository github page (only for repository that contain *.github.io on it's name)",
   "version": "1.0",
   "manifest_version": 3,
+  "icons": {
+    "48": "icons/ghpage-48.png",
+    "96": "icons/ghpage-96.png"
+  },
   "content_scripts": [
     {
       "matches": [
