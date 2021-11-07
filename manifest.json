@@ -1,6 +1,6 @@
 {
   "name": "Ghpage",
-  "description": "Make your life easier with direct link to the repository github page (only for repository that contain *.github.io on it's name)",
+  "description": "Make your life easier with direct link to the repository github page",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {

@@ -1,7 +1,7 @@
 const url = document.URL.split('/').slice(2,5)
-const siteName = url[0];
-const userName = url[1];
-const gitRepoName = url[2];
+const siteName = url[0]
+const userName = url[1]
+const gitRepoName = url[2]
 const gitHubPageReference = document.querySelectorAll('.octicon.octicon-rocket')[0]
 const repoLinkReference = document.querySelectorAll('.octicon.octicon-link')[0]
 
