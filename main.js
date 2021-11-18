@@ -30,7 +30,7 @@ if(siteName === 'github.com' && gitRepoName && (gitHubPageReference || repoLinkR
   
   if(isContainName && isTheMainRepo)
   {
-    (!isHasExternalLink || isContainName) ? newLink(gitRepoName) : newLink(`${repoLinkReference.nextElementSibling.firstElementChild.href.slice(8)}`, true)
+    (!isHasExternalLink) ? newLink(gitRepoName) : newLink(`${repoLinkReference.nextElementSibling.firstElementChild.href.slice(8)}`, true)
   } else if (isContainName && !isTheMainRepo || !isContainName && !isTheMainRepo) {
     (!isHasExternalLink) ? newLink(`${userName}.github.io/${gitRepoName}`) : newLink(`${repoLinkReference.nextElementSibling.firstElementChild.href.slice(8)}`, true)
   }
