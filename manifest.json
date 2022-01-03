@@ -1,11 +1,11 @@
 {
-  "name": "Repo Page Link - GPRL",
+  "name": "Repo Link",
   "description": "Make your life easier with direct link to the repository github page",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
-    "48": "icons/ghpage-48.png",
-    "96": "icons/ghpage-96.png"
+    "48": "icons/repolink-48.png",
+    "96": "icons/repolink-96.png"
   },
   "content_scripts": [
     {
