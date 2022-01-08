@@ -2,10 +2,7 @@
 
 const rplCreate = () => {
   
-  const url = document.URL.split('/').slice(2,5)
-  const siteName = url[0]
-  const userName = url[1]
-  const gitRepoName = url[2]
+  const [siteName, userName, gitRepoName] = document.URL.split('/').slice(2,5)
   const gitHubPageReference = document.querySelectorAll('.octicon.octicon-rocket')[0]
   const repoLinkReference = document.querySelectorAll('.octicon.octicon-link')[0]
   
@@ -49,5 +46,5 @@ const rplCreate = () => {
 
 }
 
-$rpl = document.querySelector('#repo-page-link')
-if(!$rpl) rplCreate()
+const rpl = document.querySelector('#repo-page-link')
+if(!rpl) rplCreate()
