@@ -1,7 +1,7 @@
 {
   "name": "Repo Link",
   "description": "Make your life easier with direct link to the repository github page",
-  "version": "1.0",
+  "version": "1.2",
   "manifest_version": 3,
   "icons": {
     "48": "icons/repolink-48.png",
